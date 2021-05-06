@@ -1,0 +1,4 @@
+resources:
+- repos
+- tags
+- labels

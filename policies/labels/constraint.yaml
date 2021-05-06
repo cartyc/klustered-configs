@@ -1,0 +1,15 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: must-be-klustered
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+  parameters:
+    message: "All Pods must have an `klustered` label for branding"
+    labels:
+      - key: klustered
+      - key: team
+        allowedRegex: "sg-1"
