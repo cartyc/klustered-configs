@@ -2,3 +2,4 @@ resources:
 - gatekeeper
 - netpol
 - policies
+- configs

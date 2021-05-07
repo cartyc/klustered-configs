@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    honk: no-honking-here
+    affiliation: Tok'ra
+  name: rook-ceph
