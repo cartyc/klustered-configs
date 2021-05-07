@@ -8,8 +8,8 @@ spec:
       - apiGroups: [""]
         kinds: ["Pod"]
   parameters:
-    message: "All Pods must have an `klustered` label for branding"
+    message: "All Pods must have an `klustered` label for branding and an accociated SG unit"
     labels:
       - key: klustered
       - key: team
-        allowedRegex: "sg-1"
+        allowedRegex: "sg-[0-9]+"

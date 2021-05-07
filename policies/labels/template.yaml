@@ -1,18 +1,3 @@
-apiVersion: mutations.gatekeeper.sh/v1alpha1
-kind: AssignMetadata
-metadata:
-  name: annotation-owner
-spec:
-  match:
-    scope: Namespaced
-    kinds:
-    - apiGroups: ["*"]
-      kinds: ["Pod"]
-    namespace: ["default"]
-  location: "metadata.annotations.owner"
-  parameters:
-    assign:
-      value:  "Goa'uld"
 ---
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
